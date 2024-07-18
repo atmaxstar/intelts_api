@@ -10,5 +10,5 @@ COPY . /app
 # Install the application dependencies
 RUN pip install "git+https://github.com/LahiLuk/YouTokenToMe" -r requirements.txt
 
-# Define the entry point for the container
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# command to run the app using uvicorn.
+CMD ["uvicorn","app.main:app","--host","0.0.0.0","--port","8000"]
