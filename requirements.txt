@@ -1,4 +1,4 @@
-"git+https://github.com/LahiLuk/YouTokenToMe"
+
 nemo_toolkit[nlp]
 transformers==4.40.0
 fastapi
